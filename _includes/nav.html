@@ -1,10 +1,10 @@
 <nav>
-  <ul>
+  <ul class="{{include.navclass}}">
     <li>
-      <a href="{{site.baseurl}}/index.html">Home</a>
+      <a href="{{site.baseurl}}/index.html" class="{% if page.url == '/' %}active{% endif %}">Home</a>
     </li>
     <li>
-      <a href="{{site.baseurl}}/news.html">News</a>
+      <a href="{{site.baseurl}}/posts.html" class="{% if page.url == '/posts.html' %}active{% endif %}">Posts</a>
     </li>
   </ul>
 </nav>

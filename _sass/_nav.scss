@@ -1,0 +1,26 @@
+@import "colors";
+@import "typography";
+
+nav {
+  .nav-header {
+    @extend .header-font;
+    list-style: none;
+    li {
+      display: inline-block;
+      .active {
+        color: $background-color;
+        background-color: $base-background-color-highlight;
+      }
+    }
+  }
+  .nav-footer {
+    list-style: none;
+    li {
+      display: inline-block;
+      .active {
+        color: $background-color;
+        background-color: $base-background-color-highlight;
+      }
+    }
+  }
+}
